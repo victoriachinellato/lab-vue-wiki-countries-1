@@ -1,12 +1,11 @@
 <template>
-    <div class="app">
-    </div>
-  </template>
   
-  <script setup>
+</template>
+  
+<script setup>
    
-  </script>
+</script>
   
-  <style scoped>
+<style scoped>
   
-  </style>
+</style>
