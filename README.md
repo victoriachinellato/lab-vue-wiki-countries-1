@@ -34,20 +34,6 @@ Después de pasar demasiado tiempo en GitHub, has encontrado un [conjunto de dat
 
 - Crea un Pull Request para que tus TAs puedan comprobar tu trabajo.
 
-## Cómo empezar
-
-Limpia el componente `App.vue` para que tenga la siguiente estructura dentro de las etiquetas de la plantilla
-
-```vue
-<!-- src/App.js -->
-<template>
-  <div class="app">
-  </div>
-</template>
-```
-
-<br/>
-
 ## Instrucciones
 
 ### Iteración 0 | Instalación del vue Router
