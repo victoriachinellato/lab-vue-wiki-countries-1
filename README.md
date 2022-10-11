@@ -67,18 +67,13 @@ import { createRouter, createWebHistory } from 'vue-router';
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: () => import(/* webpackChunkName: 'home' */ './views/Home.vue')
-  },
-  {
-    path: '/list',
-    name: 'list',
-    component: () => import(/* webpackChunkName: 'list' */ './views/CountriesList.vue')
+    name: 'countries',
+    component: () => import(/* webpackChunkName: 'list' */ '../views/CountriesList.vue'),
     children: [
       {
-        path: '/:code',
+        path: ':code',
         name: 'details',
-        component: () => import(/* webpackChunkName: 'details' */ './views/CountriesDetails.vue')
+        component: () => import(/* webpackChunkName: 'details' */ '../views/CountriesDetails.vue')
       },
     ]
   }
@@ -91,14 +86,18 @@ const router = createRouter({
     document.getElementById('app').scrollIntoView();
   }
 });
+
+export default router;
 ```
 ## Instrucciones
 
 ### Iteración 1.1 | Crear componentes
 
-En esta iteración, nos centraremos en el diseño general. Antes de empezar, dentro de la carpeta `src`, crea la carpeta `components`. Allí crearás al menos 3 componentes:
+En esta iteración, nos centraremos en el diseño general. Antes de empezar, dentro de la carpeta `src`, crea la carpeta `components`. Allí crearás al menos el componente:
 
 - `Navbar`: Muestra la barra de navegación básica con el nombre LAB
+
+A continuación, Dentro de la carpeta `src`, crea la carpeta `views`. Allí crearás al menos las vistas:
 
 - `CountriesList`: Muestra la lista de enlaces con los nombres de los países. Cada enlace debe ser un `router-link` que utilizaremos para *enviar* el código del país`(alpha3Code`) a través de la URL.
 
