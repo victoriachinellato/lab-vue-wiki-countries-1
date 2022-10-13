@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
@@ -13,120 +12,273 @@
 
     <div>
         <!-- Navbar -->
-        <nav class="navbar navbar-dark bg-primary mb-3">
+        <nav class="navbar is-info" role="navigation" aria-label="main navigation">
             <div class="container">
-                <a class="navbar-brand" href="/">WikiCountries</a>
-
-
+                <div class="navbar-brand">
+                    <a class="navbar-item has-text-weight-semibold" href="/">
+                        WikiCountries
+                    </a>
+                </div>
+            </div>
         </nav>
 
-        <!-- Bootstrap container wrapper div -->
-        <div class="container">
-            <!-- Bootstrap row wrapper div -->
-            <div class="row">
-                <!-- Countries List (Bootstrap column) -->
-                <div class="col-5" style="max-height: 90vh; overflow: auto">
-                    <div class="list-group">
-                        <a class="list-group-item list-group-item-action" href="/ABW">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/aw.png" />
-                            <p>Aruba</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/AFG">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/af.png" />
-                            <p>Afghanistan</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/AGO">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/ao.png" />
-                            <p>Angola</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/AIA">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/ai.png" />
-                            <p>Anguilla</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/ALA">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/ax.png" />
-                            <p>Åland Islands</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/ALB">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/al.png" />
-                            <p>Albania</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/AND">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/ad.png" />
-                            <p>Andorra</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/ARE">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/ae.png" />
-                            <p>United Arab Emirates</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/ARG">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/ar.png" />
-                            <p>Argentina</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/ARM">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/am.png" />
-                            <p>Armenia</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/ASM">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/as.png" />
-                            <p>American Samoa</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/ATA">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/aq.png" />
-                            <p>Antarctica</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/FLK">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/fk.png" />
-                            <p>Falkland Islands</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action active" href="/FRA">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/fr.png" />
-                            <p>France</p>
-                        </a>
-                        <a class="list-group-item list-group-item-action" href="/ZWE">
-                            <img src="https://flagpedia.net/data/flags/icon/72x54/zw.png" />
-                            <p>Zimbabwe</p>
-                        </a>
-                    </div>
+        <!-- container wrapper div -->
+        <div class="container" style="height: calc(100vh - 52px);">
+            <!-- columns wrapper div -->
+            <div class="columns mt-0 " style="height: 100%;">
+                <!-- Countries List (column) -->
+                <div class="column is-4" style="overflow: auto">
+                    <a class="media is-clickable" href="/ABW">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/aw.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Aruba</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/AFG">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/af.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Afghanistan</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/AGO">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/ao.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Angola</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/AIA">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/ai.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Anguilla</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/ALA">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/ax.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Åland Islands</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/ALA">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/al.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Albania</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/ALA">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/ad.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Andorra</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/ARE">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/ae.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>United Arab Emirates</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/ARG">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/ar.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Argentina</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/ARM">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/am.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Armenia</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/ASM">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/as.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>American Samoa</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/ATA">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/aq.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Antarctica</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/FLK">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/fk.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Falkland Islands</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/FRA">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/fr.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>France</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="media is-clickable" href="/ZWE">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="https://flagpedia.net/data/flags/icon/72x54/zw.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Zimbabwe</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <!-- Country Details (column) -->
+                <div class="column is-8">
+                    <section class="section" v-if="country">
 
-                <!-- Country Details (Bootstrap column) -->
-                <div class="col-7">
-                    <img src="https://flagpedia.net/data/flags/icon/72x54/fr.png" alt="country flag"
-                        style="width: 300px" />
-                    <h1>France</h1>
-                    <table class="table">
-                        <thead></thead>
-                        <tbody>
-                            <tr>
-                                <td style="width: 30%">Capital</td>
-                                <td>Paris</td>
-                            </tr>
-                            <tr>
-                                <td>Area</td>
-                                <td>
-                                    551695 km <sup>2</sup>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Borders</td>
-                                <td>
-                                    <ul>
-                                        <li><a href="/AND">Andorra</a></li>
-                                        <li><a href="/BEL">Belgium</a></li>
-                                        <li><a href="/DEU">Germany</a></li>
-                                        <li><a href="/ITA">Italy</a></li>
-                                        <li><a href="/MCO">Monaco</a></li>
-                                        <li><a href="/ESP">Spain</a></li>
-                                        <li><a href="/CHE">Switzerland</a></li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <figure class="image is-128x128">
+                            <img src="https://flagpedia.net/data/flags/icon/72x54/fr.png">
+                        </figure>
+                        <div class="title">France</div>
+                        <table class="table is-fullwidth">
+                            <tbody>
+                                <tr>
+                                    <td>Capital</td>
+                                    <td>Paris</td>
+                                </tr>
+                                <tr>
+                                    <td>Area</td>
+                                    <td>551695 km <sup>2</sup></td>
+                                </tr>
+                                <tr>
+                                    <td>Borders</td>
+                                    <td>
+                                        <ul>
+                                            <li><a href="/AND">Andorra</a></li>
+                                            <li><a href="/BEL">Belgium</a></li>
+                                            <li><a href="/DEU">Germany</a></li>
+                                            <li><a href="/ITA">Italy</a></li>
+                                            <li><a href="/MCO">Monaco</a></li>
+                                            <li><a href="/ESP">Spain</a></li>
+                                            <li><a href="/CHE">Switzerland</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
