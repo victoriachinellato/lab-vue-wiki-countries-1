@@ -2,9 +2,10 @@
      <nav class="navbar is-info" role="navigation" aria-label="main navigation">
             <div class="container">
                 <div class="navbar-brand">
-                    <a class="navbar-item has-text-weight-semibold" href="/">
+                    <router-link class="navbar-item has-text-weight-semibold" :to="{name: 'countries'}">
                         WikiCountries
-                    </a>
+                    </router-link>
+                    
                 </div>
             </div>
         </nav>
